@@ -1,1 +1,9 @@
-echo "test"
+node {
+
+    stage ('checkout') {
+
+        checkout scm
+
+    }
+
+}
