@@ -2,8 +2,7 @@ node {
 
     stage ('checkout') {
 
-        checkout scm
-
+        echo "test test"
     }
 
 }
