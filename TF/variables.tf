@@ -40,7 +40,7 @@ variable "networkSecurityGroupName" {
 
 variable "adminPassword" {
   description = "Administrator password"
-  default     = "Doyouknowme"
+  default     = "Doyouknowme@1"
 }
 
 variable "addressPrefix" {
