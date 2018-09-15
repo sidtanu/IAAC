@@ -7,7 +7,7 @@ node {
     }
     stage ('setupenv') {
     	echo " - - - - Setting up environment now - - - - "
-	/bin/sh setupenv.sh
+	////bin////sh setupenv.sh
     }
 
     stage ('TerraformActivity') {
