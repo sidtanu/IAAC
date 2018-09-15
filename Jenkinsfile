@@ -12,9 +12,11 @@ node {
 
     stage ('TerraformActivity') {
     	echo " - - - - Ready to execute Terraform now - - - - "
+	sh '''
 	cd TF
 	terraform init
 	terraform plan
 	terraform apply
+	'''
 	}
 }
