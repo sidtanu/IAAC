@@ -15,7 +15,7 @@ node {
 	sh '''
 	cd TF
 	
-	 wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
+	 wget -q -O https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
 	 unzip terraform_0.11.8_linux_amd64.zip
 	
 	 echo `./terraform --version`
