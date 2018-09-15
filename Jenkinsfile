@@ -22,7 +22,7 @@ node {
 
 	./terraform init
 	./terraform plan
-	./terraform apply
+	./terraform apply -var "adminPassword=Thankyou@1"
 	'''
 	}
 }
