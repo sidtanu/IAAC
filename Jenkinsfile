@@ -2,7 +2,7 @@ node {
 
     stage ('checkout') {
 
-        echo "test test"
+        echo "test test    mm"
 	checkout scm
     }
     stage ('setupenv') {
