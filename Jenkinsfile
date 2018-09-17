@@ -16,6 +16,7 @@ node {
 	cd TF
 	
 	 /opt/apps/vault --version
+	 /opt/apps/vault kv get -field="foo" secret/hello
 	
 	 echo `./terraform --version`
 
