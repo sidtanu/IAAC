@@ -15,7 +15,7 @@ node {
 	sh '''
 	cd TF
 	
-	 ./opt/apps/vault --version
+	 /opt/apps/vault --version
 	
 	 echo `./terraform --version`
 
