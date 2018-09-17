@@ -26,8 +26,8 @@ node {
 		
 	 echo `./terraform --version`
 	 ./terraform init
-	 ./terraform plan
-	 ./terraform apply -var "adminPassword=Thankyou@1"
+	 echo "yes" | ./terraform plan
+	 echo "yes" | ./terraform apply -var "adminPassword=Thankyou@1"
 	 
 	 echo " - - - - - - C O M P L E T E D - - - - - - - "
 
