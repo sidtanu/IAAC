@@ -20,7 +20,7 @@ node {
 	 /opt/apps/vault --version
 	 /opt/apps/vault kv get -field="foo" secret/hello
 	
-	az login --service-principal -u "`vault kv get -field="client_id" secret/wrtazr`" -p "`vault kv get -field="client_secret" secret/wrtazr`" --tenant "`vault kv get -field="tenant_id" secret/wrtazr`"
+	az login --service-principal -u "`/opt/apps/vault kv get -field="client_id" secret/wrtazr`" -p "`/opt/apps/vault kv get -field="client_secret" secret/wrtazr`" --tenant "`/opt/apps/vault kv get -field="tenant_id" secret/wrtazr`"
 	
 	 echo `./terraform --version`
 	 ./terraform init
