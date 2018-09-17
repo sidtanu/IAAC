@@ -15,14 +15,11 @@ node {
 	sh '''
 	cd TF
 	
-	 wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
-	 unzip terraform_0.11.8_linux_amd64.zip
+	 ./opt/apps/vault --version
 	
 	 echo `./terraform --version`
 
-	./terraform init
-	./terraform plan
-	./terraform apply -var "adminPassword=Thankyou@1"
+
 	'''
 	}
 }
